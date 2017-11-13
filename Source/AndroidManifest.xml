@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="5076" android:versionName="5.0u7" android:installLocation="internalOnly" package="net.dinglisch.android.tasker" platformBuildVersionCode="25" platformBuildVersionName="7.1.1">
+    <supports-screens android:anyDensity="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:resizeable="true" android:xlargeScreens="true" />
+    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="21" />
+    <permission android:label="@string/permission_label_run_task" android:name="net.dinglisch.android.tasker.PERMISSION_RUN_TASKS" android:protectionLevel="UNKNOWN_DATA_0x0" android:description="@string/permission_descr_run_tasks" />
+    <permission android:label="@string/permission_label_auto_import" android:name="net.dinglisch.android.tasker.PERMISSION_AUTO_IMPORT" android:protectionLevel="UNKNOWN_DATA_0x0" android:description="@string/permission_descr_auto_import" />
+    <uses-permission android:name="net.dinglisch.android.zoom.permission.MAKE_CHANGES" />
+    <permission android:label="@string/permission_label_run_task" android:name="net.dinglisch.android.zoom.permission.MAKE_CHANGES" android:protectionLevel="UNKNOWN_DATA_0x0" android:description="@string/permission_descr_run_tasks" />
+    <uses-permission android:name="cyanogenmod.permission.PUBLISH_CUSTOM_TILE" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.BODY_SENSORS" />
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="com.latedroid.juicedefender.permission.CONTROL_JUICEDEFENDER" />
+    <uses-permission android:name="com.latedroid.juicedefender.permission.TOGGLE_MOBILE_DATA" />
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+    <uses-permission android:name="com.android.phone.CHANGE_NETWORK_MODE" />
+    <uses-permission android:name="android.permission.SET_TIME_ZONE" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.ACCESS_WIMAX_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIMAX_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.usb.host" android:required="false" />
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="false" />
+    <uses-feature android:name="android.hardware.sensor.light" android:required="false" />
+    <uses-feature android:name="android.hardware.sensor.proximity" android:required="false" />
+    <uses-feature android:name="android.hardware.sensor.barometer" android:required="false" />
+    <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="false" />
+    <uses-feature android:name="android.hardware.wifi" android:required="false" />
+    <uses-feature android:name="android.hardware.location.network" android:required="false" />
+    <uses-feature android:name="android.hardware.telephony" android:required="false" />
+    <uses-feature android:name="android.hardware.microphone" android:required="false" />
+    <uses-feature android:name="android.hardware.location" android:required="false" />
+    <uses-feature android:name="android.hardware.location.gps" android:required="false" />
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+    <uses-feature android:name="android.hardware.screen.landscape" android:required="false" />
+    <uses-feature android:name="android.hardware.screen.portrait" android:required="false" />
+    <uses-feature android:name="android.software.app_widgets" android:required="false" />
+    <uses-feature android:glEsVersion="20000" android:required="false" />
+    <application android:theme="@style/Theme.Application" android:label="@string/app_name" android:icon="@drawable/cust_app_icon" android:backupAgent="MyBackupAgent" android:restoreAnyVersion="false" android:hardwareAccelerated="@bool/is_less_than_marshmallow" android:roundIcon="@mipmap/cust_app_icon_round">
+        <meta-data android:name="android.max_aspect" android:value="2.1" />
+        <meta-data android:name="com.google.android.backup.api_key" android:value="AEdPqrEAAAAIloUzVq7-xvaHCcUYiu9aC2inqGijn-iW_px6eQ" />
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyAqYXaiefXDsP3I0z53-9CV7-qdSKIy8Xg" />
+        <provider android:name=".MyContentProvider" android:exported="true" android:authorities="net.dinglisch.android.tasker" />
+        <activity android:theme="@style/Theme.Startup.Panel" android:label="@string/app_name" android:name=".Tasker" android:configChanges="keyboardHidden|orientation|screenSize" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".Main" android:launchMode="singleTop" android:screenOrientation="unspecified" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize|adjustNothing" />
+        <activity android:name=".KidConfig" android:exported="false" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustResize|adjustNothing" />
+        <activity android:name=".ListItemEdit" android:exported="false" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustResize|adjustNothing" />
+        <activity android:name=".CreateKeyStore" android:exported="false" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustResize|adjustNothing" />
+        <activity android:theme="@*android:style/Theme.NoDisplay" android:label="@string/search_helper_name" android:name=".LongPressSearch" android:enabled="false" android:exported="true" android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH_LONG_PRESS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.Panel" android:name=".VoiceProxy" android:excludeFromRecents="true" />
+        <activity android:name=".HTMLView" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".Settings" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustResize|adjustNothing">
+            <intent-filter>
+                <action android:name="net.dinglisch.android.tasker.ACTION_OPEN_PREFS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE_PREFERENCES" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActionEdit" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustResize|adjustNothing" />
+        <activity android:name=".ActionEditNoResize" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".SceneEdit" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".ScenePropertiesEdit" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".SceneEditElement" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustResize|adjustNothing" />
+        <activity android:name=".Licence" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustResize|adjustNothing" />
+        <activity android:name=".EventEdit" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustResize|adjustNothing" />
+        <activity android:name=".StateEdit" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustResize|adjustNothing" />
+        <activity android:name=".MacroEdit" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.NoDisplay" android:name=".USBHandler" android:enabled="false" android:finishOnTaskLaunch="true" android:clearTaskOnLaunch="true" android:stateNotNeeded="true" android:excludeFromRecents="true" android:launchMode="singleInstance" android:configChanges="keyboardHidden|orientation|screenSize" android:alwaysRetainTaskState="false" android:allowTaskReparenting="true" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+                <action android:name="android.hardware.usb.action.USB_DEVICE_DETACHED" />
+            </intent-filter>
+            <meta-data android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" android:resource="@xml/usb_device_filter" />
+            <meta-data android:name="android.hardware.usb.action.USB_DEVICE_DETACHED" android:resource="@xml/usb_device_filter" />
+        </activity>
+        <activity android:theme="@*android:style/Theme.NoDisplay" android:name=".MIDIHandler" android:enabled="true" android:finishOnTaskLaunch="true" android:clearTaskOnLaunch="true" android:stateNotNeeded="true" android:excludeFromRecents="true" android:launchMode="singleInstance" android:configChanges="keyboardHidden|orientation|screenSize" android:alwaysRetainTaskState="false" android:allowTaskReparenting="true" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+            </intent-filter>
+            <meta-data android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" android:resource="@xml/usb_midi_device_filter" />
+        </activity>
+        <activity android:theme="@*android:style/Theme.NoDisplay" android:name=".WebSearchHandler" android:enabled="false" android:finishOnTaskLaunch="true" android:clearTaskOnLaunch="true" android:stateNotNeeded="true" android:excludeFromRecents="true" android:launchMode="singleInstance" android:configChanges="keyboardHidden|orientation|screenSize" android:alwaysRetainTaskState="false" android:allowTaskReparenting="true" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.speech.action.WEB_SEARCH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.NoDisplay" android:name=".AssistHandler" android:enabled="false" android:finishOnTaskLaunch="true" android:clearTaskOnLaunch="true" android:stateNotNeeded="true" android:excludeFromRecents="true" android:launchMode="singleInstance" android:configChanges="keyboardHidden|orientation|screenSize" android:alwaysRetainTaskState="false" android:allowTaskReparenting="true" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.ASSIST" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.NoDisplay" android:name=".IntentHandler" android:finishOnTaskLaunch="true" android:clearTaskOnLaunch="true" android:stateNotNeeded="true" android:excludeFromRecents="true" android:launchMode="singleInstance" android:configChanges="keyboardHidden|orientation|screenSize" android:alwaysRetainTaskState="false" android:allowTaskReparenting="true" android:noHistory="true">
+            <intent-filter>
+                <action android:name="net.dinglisch.android.tasker.WIDICKYUM" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" android:host="*" android:pathPattern=".*\.prf\.xml" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" android:host="*" android:pathPattern=".*\.tsk\.xml" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" android:host="*" android:pathPattern=".*\.scn\.xml" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" android:host="*" android:pathPattern=".*\.prj\.xml" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/*" android:scheme="file" android:pathPattern=".*\.prf\.xml" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/*" android:scheme="file" android:pathPattern=".*\.tsk\.xml" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/*" android:scheme="file" android:pathPattern=".*\.scn\.xml" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/*" android:scheme="file" android:pathPattern=".*\.prj\.xml" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CameraProxy" android:taskAffinity="" android:excludeFromRecents="true" android:screenOrientation="landscape" android:configChanges="keyboardHidden|orientation|screenSize" android:allowTaskReparenting="true" android:noHistory="true" />
+        <activity android:theme="@*android:style/Theme.Light.Panel" android:name=".CameraProxyDiscrete" android:taskAffinity="" android:excludeFromRecents="true" android:launchMode="singleInstance" android:configChanges="keyboardHidden|orientation|screenSize" android:allowTaskReparenting="true" android:noHistory="true" />
+        <activity android:theme="@*android:style/Theme.NoDisplay" android:name=".ImageSelect" android:exported="false" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity android:name=".LocSelect" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent" android:name=".GeoCoder" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Light.Panel" android:name=".ProxyTransparent" android:finishOnTaskLaunch="true" android:clearTaskOnLaunch="true" android:stateNotNeeded="true" android:excludeFromRecents="true" android:launchMode="singleInstance" android:configChanges="keyboardHidden|orientation|screenSize" android:alwaysRetainTaskState="false" android:allowTaskReparenting="true" />
+        <activity android:name="RunLog" android:exported="false" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="Search" android:exported="false" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent" android:label="@string/word_scene" android:name="SceneActivity" android:exported="false" android:launchMode="standard" android:configChanges="keyboardHidden|orientation|screenSize" android:allowTaskReparenting="true" android:windowSoftInputMode="stateUnchanged|stateHidden|stateAlwaysHidden|stateAlwaysVisible|adjustPan|adjustNothing" />
+        <activity android:theme="@*android:style/Theme.Translucent" android:label="@string/word_scene" android:name="SceneActivityResize" android:exported="false" android:launchMode="standard" android:configChanges="keyboardHidden|orientation|screenSize" android:allowTaskReparenting="true" android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustResize|adjustNothing" />
+        <activity android:theme="@*android:style/Theme.NoDisplay" android:name=".TaskSelect">
+            <intent-filter>
+                <action android:name="net.dinglisch.android.tasker.ACTION_TASK_SELECT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.NoDisplay" android:name=".DummyActivity" android:enabled="true" android:finishOnTaskLaunch="true" android:clearTaskOnLaunch="true" android:stateNotNeeded="true" android:excludeFromRecents="true" android:alwaysRetainTaskState="false" android:allowTaskReparenting="true" android:noHistory="true" />
+        <activity android:theme="@*android:style/Theme.NoDisplay" android:name=".DockActivityCar" android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.CAR_DOCK" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.NoDisplay" android:name=".DockActivityDesk" android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DESK_DOCK" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.Translucent" android:name=".TaskTimerConfigure" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".ProfileProperties" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".AppSelect" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".DaySelect" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".DoodleEdit" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".FileSelect" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".TimeSelect" android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity android:theme="@style/Theme.AppWidgetConfigure.Panel" android:label="@string/widget_menu_label" android:name=".TaskerAppWidgetConfigure" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/shortcut_menu_label" android:name=".TaskerAppWidgetConfigureShortcut" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.Dialog" android:name=".TaskerAppWidgetCountdownConfigure">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+        <service android:name=".MonitorService" android:exported="false" />
+        <service android:name=".ExecuteService" android:exported="false" />
+        <service android:label="@string/scene_element_name_toggle" android:icon="?attr/iconAction" android:name=".QSTileService0" android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+        <service android:label="@string/word_unset" android:name=".QSTileService1" android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+        <service android:label="@string/word_unset" android:name=".QSTileService2" android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+        <service android:name=".NotificationListenerService" android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+        <service android:name=".MyVpnService" android:permission="android.permission.BIND_VPN_SERVICE">
+            <intent-filter>
+                <action android:name="android.net.VpnService" />
+            </intent-filter>
+        </service>
+        <service android:name=".MyAccessibilityServiceOld" android:enabled="@bool/is_less_than_jellybean">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+        </service>
+        <service android:label="Tasker" android:name=".MyAccessibilityService" android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" android:enabled="@bool/is_jellybean_or_higher">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data android:name="android.accessibilityservice" android:resource="@xml/accessibilityservice" />
+        </service>
+        <receiver android:name=".IpackReceiver">
+            <intent-filter>
+                <action android:name="net.dinglisch.android.ipack.actions.QUERY_PACKS" />
+                <action android:name="net.dinglisch.android.ipack.actions.QUERY_ICONS" />
+            </intent-filter>
+        </receiver>
+        <activity android:name=".IpackIconSelect">
+            <intent-filter>
+                <action android:name="net.dinglisch.android.ipack.actions.ICON_SELECT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".ReceiverStaticPhoneState" android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".ReceiverStaticNotification" android:enabled="false" android:exported="false">
+            <intent-filter>
+                <action android:name="net.dinglisch.android.tasker.NOTORUM" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".ReceiverStaticMediaButton" android:enabled="false" />
+        <receiver android:name=".ReceiverStaticCallRewriter" android:enabled="false">
+            <intent-filter android:priority="1">
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".ReceiverStaticCallBlocker" android:enabled="false">
+            <intent-filter android:priority="0">
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".ReceiverStaticAlwaysOn" android:enabled="true">
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="net.dinglisch.android.tasker.WILLYUM" />
+                <action android:name="net.dinglisch.android.tasker.AWAKEY" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".ReceiverStaticAutoImport" android:permission="net.dinglisch.android.tasker.PERMISSION_AUTO_IMPORT" android:enabled="true">
+            <intent-filter>
+                <action android:name="net.dinglisch.android.tasker.actions.AUTO_IMPORT_READY" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".ReceiverStaticRunTasks" android:permission="net.dinglisch.android.tasker.PERMISSION_RUN_TASKS" android:enabled="true">
+            <intent-filter>
+                <action android:name="net.dinglisch.android.tasker.ACTION_TASK" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="net.dinglisch.android.tasker.ACTION_TASK" />
+                <data android:scheme="id" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".ReceiverStaticInternal" android:enabled="false">
+            <intent-filter>
+                <action android:name="net.dinglisch.android.tasker.ACTION_FILE_CHANGED" />
+                <action android:name="net.dinglisch.android.tasker.SMSEY" />
+                <action android:name="net.dinglisch.android.tasker.ALARUM" />
+                <action android:name="net.dinglisch.android.tasker.CALARUM" />
+                <action android:name="net.dinglisch.android.tasker.COOLORUM" />
+                <action android:name="net.dinglisch.android.tasker.WIDICKYUM" />
+                <action android:name="net.dinglisch.android.tasker.ANDPROFTUM" />
+                <action android:name="android.intent.action.DATE_CHANGED" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="com.twofortyfouram.locale.intent.action.REQUEST_QUERY" />
+            </intent-filter>
+        </receiver>
+        <receiver android:label="@string/widget_menu_label" android:name=".TaskerAppWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/appwidget_info" />
+        </receiver>
+        <receiver android:label="@string/widget_menu_countdown_label" android:icon="?attr/iconTimer" android:name=".TaskerAppWidgetCountdownProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/appwidget_countdown_info" />
+        </receiver>
+        <receiver android:name=".MyDeviceAdminReceiver" android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <meta-data android:name="android.app.device_admin" android:resource="@xml/device_admin_policy" />
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

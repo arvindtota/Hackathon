@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@id/root_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/search_term" />
+    <include android:id="@id/header_bar_top" android:visibility="gone" layout="@layout/header_bar" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x1" android:layout_weight="1.0">
+        <ListView android:id="@id/results" android:paddingLeft="@dimen/content_side_margin_left" android:paddingRight="@dimen/content_side_margin_right" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/List" />
+        <include android:id="@id/bottom_header_shadow" android:visibility="gone" layout="@layout/top_shadow" />
+    </FrameLayout>
+    <include android:id="@id/header_bar_bottom" android:visibility="gone" layout="@layout/header_bar" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/filter_buttons" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ToggleButton android:textSize="12dp" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/userdata_toggle" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="0.25" />
+        <ToggleButton android:textSize="12dp" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/features_toggle" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="0.25" />
+        <ToggleButton android:textSize="12dp" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/userguide_toggle" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="0.25" />
+        <ToggleButton android:textSize="12dp" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/faq_toggle" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="0.25" />
+    </LinearLayout>
+</LinearLayout>

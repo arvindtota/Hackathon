@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="arvind.ase4.RegisterActivity"
+    android:background="@drawable/blur">
+
+    <RelativeLayout
+        android:layout_width="378dp"
+        android:layout_height="545dp"
+        android:layout_marginLeft="-24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteY="-41dp">
+
+        <EditText
+            android:id="@+id/etname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="36dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="68dp"
+            android:ems="10"
+            android:hint="Name"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etusername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etname"
+            android:layout_alignStart="@+id/etname"
+            android:layout_below="@+id/etname"
+            android:layout_marginTop="26dp"
+            android:ems="10"
+            android:hint="Username"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etemail"
+            android:layout_alignStart="@+id/etemail"
+            android:layout_below="@+id/etemail"
+            android:layout_marginTop="39dp"
+            android:ems="10"
+            android:hint="Password"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/etconfpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etpassword"
+            android:layout_alignStart="@+id/etpassword"
+            android:layout_below="@+id/etpassword"
+            android:layout_marginTop="33dp"
+            android:ems="10"
+            android:hint="Confirm Password"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/etemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etusername"
+            android:layout_alignStart="@+id/etusername"
+            android:layout_below="@+id/etusername"
+            android:layout_marginTop="34dp"
+            android:ems="10"
+            android:hint="Email"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:inputType="textEmailAddress" />
+
+        <Button
+            android:id="@+id/bsignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etconfpassword"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/etconfpassword"
+            android:layout_marginBottom="41dp"
+            android:text="Register" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/bsignup"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_marginBottom="14dp"
+            android:text="TextView"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

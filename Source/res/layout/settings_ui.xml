@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:scrollbarStyle="outsideOverlay" android:orientation="vertical" android:id="@id/tab_one_layout" android:paddingLeft="@dimen/content_side_margin_left" android:paddingRight="@dimen/content_side_margin_right" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:layout_width="UNKNOWN_DATA_0x0" android:layout_height="UNKNOWN_DATA_0x0" />
+        <include android:id="@id/settings_divider_ui_general" layout="@layout/subtitle" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/beginner_mode_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp">
+            <TextView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/settings_beginner_mode_label" android:layout_width="wrap_content" android:layout_weight="1.0" android:layout_alignParentTop="true" style="@style/SettingsLabel" />
+            <CheckBox android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/beginner_mode_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/animations_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp">
+            <TextView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/settings_animations_label" android:layout_width="wrap_content" android:layout_weight="1.0" style="@style/SettingsLabel" />
+            <CheckBox android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/animations_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/haptic_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp">
+            <TextView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/settings_haptic_label" android:layout_width="wrap_content" android:layout_weight="1.0" style="@style/SettingsLabel" />
+            <CheckBox android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/haptic_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/tips_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp">
+            <TextView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/settings_tips_label" android:layout_width="wrap_content" android:layout_weight="1.0" style="@style/SettingsLabel" />
+            <CheckBox android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/tips_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/theme_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp">
+            <TextView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/theme_label" android:layout_width="match_parent" style="@style/SettingsLabel" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/theme_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Spinner android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/theme_spinner" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:drawSelectorOnTop="true" android:layout_weight="1.0" />
+                <ImageButton android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/accent_view" android:layout_marginLeft="5dp" android:src="?attr/iconColour" style="@style/IB" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/hide_status_bar_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp">
+            <TextView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/settings_hide_status_bar_label" android:layout_width="match_parent" style="@style/SettingsLabel" />
+            <Spinner android:id="@id/hide_status_bar_spinner" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:drawSelectorOnTop="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/orientation_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp">
+            <TextView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/settings_orientation_label" android:layout_width="match_parent" style="@style/SettingsLabel" />
+            <Spinner android:id="@id/orientation_spinner" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:drawSelectorOnTop="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/drag_mode_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp">
+            <TextView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/settings_drag_mode_label" android:layout_width="match_parent" style="@style/SettingsLabel" />
+            <Spinner android:id="@id/drag_mode_spinner" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:drawSelectorOnTop="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/lock_icon_colour_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp">
+            <TextView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/settings_lock_icon_colour_label" android:layout_width="wrap_content" android:layout_weight="1.0" style="@style/SettingsLabel" />
+            <CheckBox android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/lock_icon_colour_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <include android:id="@id/button_lock_icon_colour_help" layout="@layout/button_help" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/ui_hw_accel_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp">
+            <TextView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/settings_ui_hw_accel_label" android:layout_width="wrap_content" android:layout_weight="1.0" style="@style/SettingsLabel" />
+            <CheckBox android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/ui_hw_accel_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <include android:id="@id/button_ui_hw_accel_help" layout="@layout/button_help" />
+        </LinearLayout>
+        <include android:id="@id/settings_divider_ui_profile_list_view" layout="@layout/subtitle" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/show_enable_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp">
+            <TextView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/settings_show_enable_label" android:layout_width="wrap_content" android:layout_weight="1.0" style="@style/SettingsLabel" />
+            <CheckBox android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/show_enable_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/ask_profile_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp">
+            <TextView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/settings_ask_profile_label" android:layout_width="wrap_content" android:layout_weight="1.0" style="@style/SettingsLabel" />
+            <CheckBox android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/ask_profile_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/confirm_profile_deletes_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp">
+            <TextView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/settings_confirm_profile_deletes_label" android:layout_width="wrap_content" android:layout_weight="1.0" style="@style/SettingsLabel" />
+            <CheckBox android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/confirm_profile_deletes_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/confirm_context_and_task_deletes_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp">
+            <TextView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/settings_confirm_context_and_task_deletes_label" android:layout_width="wrap_content" android:layout_weight="1.0" style="@style/SettingsLabel" />
+            <CheckBox android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/confirm_context_and_task_deletes_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/profile_textsize_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp"
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/settings_profile_textsize_label" android:layout_width="wrap_content" android:layout_weight="1.0" style="@style/SettingsLabel" />
+                <TextView android:textSize="18dp" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/profile_textsize_value" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <SeekBar android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/profile_textsize_seeker" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/auto_collapse_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp"
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/settings_auto_collapse_label" android:layout_width="wrap_content" android:layout_weight="1.0" style="@style/SettingsLabel" />
+                <TextView android:textSize="18dp" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/auto_collapse_value" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <SeekBar android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/auto_collapse_seeker" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <include android:id="@id/button_auto_collapse_help" layout="@layout/button_help" />
+            </LinearLayout>
+        </LinearLayout>
+        <include android:id="@id/settings_divider_lock" layout="@layout/subtitle" />
+        <LinearLayout android:orientation="vertical" android:id="@id/lock_code_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp">
+            <TextView android:id="@id/settings_lock_code_label" android:layout_width="match_parent" style="@style/SettingsLabel" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <EditText android:textSize="16dp" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/lock_code_edit" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="1" android:scrollHorizontally="false" android:singleLine="true" android:maxLength="15" android:phoneNumber="true" android:layout_weight="1.0" android:imeOptions="actionGo|actionSearch|actionSend|actionNext|actionDone|actionPrevious" />
+                <include android:id="@id/button_lock_code_help" layout="@layout/button_help" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/lock_all_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp">
+            <TextView android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/settings_lock_all_label" android:layout_width="wrap_content" android:layout_weight="1.0" style="@style/SettingsLabel" />
+            <CheckBox android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/lock_all_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <include android:id="@id/button_lock_all_help" layout="@layout/button_help" />
+        </LinearLayout>
+        <include android:id="@id/settings_divider_localization" layout="@layout/subtitle" />
+        <LinearLayout android:orientation="vertical" android:id="@id/lang_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp">
+            <TextView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/settings_lang_label" android:layout_width="match_parent" style="@style/SettingsLabel" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Spinner android:id="@id/lang_spinner" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:drawSelectorOnTop="true" android:layout_weight="1.0" />
+                <Button android:id="@id/button_lang_download" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bl_download" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/docs_online_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp">
+            <TextView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/settings_docs_online_label" android:layout_width="wrap_content" android:layout_weight="1.0" style="@style/SettingsLabel" />
+            <CheckBox android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/docs_online_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

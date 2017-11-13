@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="horizontal" android:id="@id/pos" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="0.33">
+    <EditText android:textSize="12dp" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/x" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:maxWidth="50dp" android:maxLength="5" android:layout_weight="0.5" android:inputType="number|numberSigned|numberDecimal|numberPassword|phone" />
+    <TextView android:textSize="12dp" android:id="@id/comma" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <EditText android:textSize="12dp" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/y" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:maxLength="5" android:layout_weight="0.5" android:inputType="number|numberSigned|numberDecimal|numberPassword|phone" />
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@id/content" android:layout_width="match_parent" android:layout_height="match_parent">
+    <net.dinglisch.android.tasker.MyScrollView android:scrollbarStyle="outsideOverlay" android:orientation="vertical" android:id="@id/content_scroller" android:paddingLeft="@dimen/content_side_margin_left" android:paddingRight="@dimen/content_side_margin_right" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x1" android:fillViewport="true" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/solid_content" android:layout_width="match_parent" android:layout_height="match_parent"
+            <LinearLayout android:orientation="vertical" android:id="@id/arg_container" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:id="@id/list_builder_layout" android:paddingTop="@dimen/args_edit_param_spacing" android:layout_width="match_parent" android:layout_height="wrap_content"
+                <LinearLayout android:orientation="horizontal" android:background="?attr/colourContentBackground" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0c0015">
+                    <TextView android:id="@id/list_builder_label" android:layout_width="match_parent" style="@style/ParamLabel" />
+                </LinearLayout>
+                <include layout="@layout/list_builder" />
+                <ImageView android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/button_new" android:src="?attr/iconAdd" style="@style/IB" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/continue_on_error_layout" android:paddingTop="@dimen/args_edit_param_spacing" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include layout="@layout/arg_layout_top_margin" />
+                <LinearLayout android:orientation="horizontal" android:background="?attr/colourContentBackground" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0c0015">
+                    <include layout="@layout/arg_layout_left_margin" />
+                    <TextView android:id="@id/continue_on_error_label" android:layout_width="UNKNOWN_DATA_0x1" android:layout_weight="1.0" style="@style/ParamLabel" />
+                    <CheckBox android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/continue_on_error_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/args_edit_checkbox_spacing_right" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/args_edit_param_spacing" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include layout="@layout/arg_layout_left_margin" />
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <include layout="@layout/arg_layout_top_margin" />
+                    <include layout="@layout/condition_header" />
+                    <include layout="@layout/condition_anchor" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/label_layout" android:paddingTop="@dimen/args_edit_param_spacing" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include layout="@layout/arg_layout_left_margin" />
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <include layout="@layout/arg_layout_top_margin" />
+                    <LinearLayout android:orientation="horizontal" android:background="?attr/colourContentBackground" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0c0015">
+                        <TextView android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/word_label" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/ParamLabel" />
+                        <CheckBox android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/label_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/args_edit_checkbox_spacing_right" />
+                    </LinearLayout>
+                    <EditText android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/label_edittext" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/args_edit_edittext_spacing" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </net.dinglisch.android.tasker.MyScrollView>
+</LinearLayout>

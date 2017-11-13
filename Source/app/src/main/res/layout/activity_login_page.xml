@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="arvind.ase4.Login_Page"
+    android:background="@drawable/blur">
+
+    <RelativeLayout
+        android:layout_width="432dp"
+        android:layout_height="614dp"
+        tools:layout_editor_absoluteX="-11dp"
+        tools:layout_editor_absoluteY="3dp">
+
+        <EditText
+            android:id="@+id/etusername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/bsignup"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/bsignup"
+            android:layout_marginTop="60dp"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff" />
+
+        <Button
+            android:id="@+id/blogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etpassword"
+            android:layout_alignStart="@+id/etpassword"
+            android:layout_centerVertical="true"
+            android:text="Log in" />
+
+        <Button
+            android:id="@+id/bsignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/blogin"
+            android:layout_alignBottom="@+id/blogin"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="118dp"
+            android:layout_marginRight="118dp"
+            android:text="Signup" />
+
+        <EditText
+            android:id="@+id/etpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etusername"
+            android:layout_alignStart="@+id/etusername"
+            android:layout_below="@+id/etusername"
+            android:layout_marginTop="39dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
